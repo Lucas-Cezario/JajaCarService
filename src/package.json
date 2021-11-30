@@ -1,0 +1,35 @@
+{
+  "name": "tecweb",
+  "version": "1.0.0",
+  "description": "projeto tecweb",
+  "main": "index.js",
+  "scripts": {
+    "view": "npm start --prefix view",
+    "server": "nodemon index.js",
+    "start": "concurrently \"npm run view\" \"npm run server\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "grupo 6",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.6.1",
+    "concurrently": "^6.3.0",
+    "consign": "^0.1.6",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^6.0.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
